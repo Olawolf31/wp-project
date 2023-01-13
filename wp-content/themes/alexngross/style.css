@@ -27,11 +27,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-family: Montserrat;
 }
 
 .main-navigation ul {
   list-style: none;
-
   margin: 0;
   padding: 0;
   display: flex;
@@ -185,12 +185,12 @@ section.main-content {
 /* Articles content
 --------------------------------------------- */
 section.articles {
-	max-width: 100%;
-margin: 3.125rem auto;
+  max-width: 100%;
+  margin: 3.125rem auto;
 }
 
 .articles-container {
-	max-width: 80%;
+  max-width: 80%;
   margin: 0 auto;
 }
 .articles h2::before {
@@ -252,8 +252,12 @@ margin: 3.125rem auto;
 
 /* Media Block
 --------------------------------------------- */
+
+section.media-block {
+  max-width: 100%;
+}
 .media-block-container {
-  max-width: 80%;
+  width: 80%;
   margin: 3.125rem auto;
 }
 
@@ -263,23 +267,29 @@ margin: 3.125rem auto;
   margin: 1.25rem 0;
 }
 
-.media-block-1, .media-block-2, .media-block-3, .media-block-4 {
+.media-block-1,
+.media-block-2,
+.media-block-3,
+.media-block-4 {
   display: flex;
-  margin: 3.125rem 0
+  margin: 3.125rem 0;
 }
 
-.media-block-1-img, .media-block-3-img{
-  width: 30em; 
+.media-block-1-img,
+.media-block-3-img {
+  width: 30em;
   height: auto;
-  order: 0
+  order: 0;
 }
 
-.media-block-1-content, .media-block-3-content {
+.media-block-1-content,
+.media-block-3-content {
   width: 60%;
   margin-left: 1.25rem;
 }
 
-.media-block-1-content h3::before , .media-block-3-content h3::before {
+.media-block-1-content h3::before,
+.media-block-3-content h3::before {
   content: "";
   display: block;
   width: 3.125rem;
@@ -291,32 +301,35 @@ margin: 3.125rem auto;
   top: -10px;
 }
 
-.media-block-1-content h3, .media-block-3-content h3 {
-font-family: Montserrat;
-font-weight: 500;
-font-size: 1.56rem;
+.media-block-1-content h3,
+.media-block-3-content h3 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.56rem;
 }
 
-.media-block-1-content p, .media-block-3-content p{
+.media-block-1-content p,
+.media-block-3-content p {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.68rem;
 }
 
-.media-block-2-content, .media-block-4-content {
+.media-block-2-content,
+.media-block-4-content {
   width: 60%;
   margin-right: 1.25rem;
-
 }
 
-
-.media-block-2-img, .media-block-4-img{
-  width: 30em; 
+.media-block-2-img,
+.media-block-4-img {
+  width: 30em;
   height: auto;
-  order: 1
+  order: 1;
 }
 
-.media-block-2-content h3::before , .media-block-4-content h3::before {
+.media-block-2-content h3::before,
+.media-block-4-content h3::before {
   content: "";
   display: block;
   width: 3.125rem;
@@ -328,21 +341,67 @@ font-size: 1.56rem;
   top: -10px;
 }
 
-.media-block-2-content h3, .media-block-4-content h3 {
+.media-block-2-content h3,
+.media-block-4-content h3 {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 1.56rem;
-  }
+}
 
-.media-block-2-content p, .media-block-4-content p{
+.media-block-2-content p,
+.media-block-4-content p {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.68rem;
 }
 
+/* footer
+--------------------------------------------- */
 
+footer {
+  background-color: #6e6e6e;
+  max-width: 100%;
+}
 
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 2.5rem 0;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: Montserrat;
+}
 
+.footer-col {
+  width: 30%;
+  text-align: center;
+}
+
+.footer-col-3 {
+  width: 40%;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-menu li a:hover {
+  color: #ff000f;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
 
 /* Small menu. */
 .menu-toggle,

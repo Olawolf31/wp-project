@@ -157,9 +157,6 @@ get_header();
 
                        
     <img class='<?php echo $container_class; ?>-img' src="<?php echo $image; ?>" alt="">
-
-
-
                         <div class='<?php echo $container_class; ?>-content'>
                         <h3><?php echo $title; ?></h3>
                         <p>
@@ -188,7 +185,7 @@ get_header();
 
 
 
-
+    </section>
 
 <?php
 get_footer();

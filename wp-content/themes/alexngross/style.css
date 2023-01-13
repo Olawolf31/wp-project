@@ -111,59 +111,236 @@ body {
 /* Main content
 --------------------------------------------- */
 
-.main-content-section {
+section.main-content {
   background-color: #f0f0f0;
   padding: 20px 0;
 }
 
 .main-content-container {
-  max-width: 80%;
-  margin: 50px auto;
+  max-width: 100%;
+  margin: 50px 0;
 }
 
-.main-content-container h2::before {
-	content: "";
-	display: block;
-	width: 50px;
-	height: 5px;
-	background-color: #ff000f;
-	margin-bottom: 0px;
-	position: relative;
-	left: 0;
-	top: -10px;
-  }
-
-.main-content-container h2 {
-	text-align: left;
-	font-family: Montserrat;
-  }
-
-.main-content {
+.image-text-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.image-text-container h2::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #ff000f;
+  margin-bottom: 0px;
+  position: relative;
+  left: 0;
+  top: -10px;
+}
+
+.image-text-container h2 {
+  text-align: left;
+  margin-left: 16%;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+.image-text {
+  display: flex;
   align-items: center;
 }
 
-
-
-.main-content img {
-  flex: 1;
-  max-width: 50%;
+.image-text img {
+  max-width: 40rem;
   height: auto;
-  margin-left: -160px;
-
+  margin-right: 0.6rem;
 }
 
-
-
-.main-content p {
-  flex: 1;
+.image-text-description {
   text-align: left;
-  margin-right: auto;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
-  line-height: 27px;
+  line-height: 1.6rem;
+  margin-bottom: 1.1rem;
 }
+
+.image-text-button {
+  background-color: #ff000f;
+  padding: 1rem;
+  max-width: 18.75rem;
+  margin-top: 1.25rem;
+  border-radius: 6.1875rem;
+  color: #fff;
+  text-align: center;
+}
+
+.image-text-button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Articles content
+--------------------------------------------- */
+section.articles {
+	max-width: 100%;
+margin: 3.125rem auto;
+}
+
+.articles-container {
+	max-width: 80%;
+  margin: 0 auto;
+}
+.articles h2::before {
+  content: "";
+  display: block;
+  width: 3.125rem;
+  height: 0.3125rem;
+  background-color: #ff000f;
+  margin-bottom: 0px;
+  position: relative;
+  left: 0;
+  top: -10px;
+}
+
+.articles h2 {
+  font-size: 1.56rem;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+.articles-content {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.articles-item h3 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.articles-item img {
+  max-width: 100%;
+  width: 20em;
+  height: auto;
+  object-fit: contain;
+}
+.articles-item p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.68rem;
+}
+
+.articles-button {
+  background-color: #ff000f;
+  padding: 0.93rem;
+  max-width: 12.5rem;
+  margin-top: 1.25rem;
+  border-radius: 6.18rem;
+  color: #fff;
+  text-align: center;
+}
+
+.articles-button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Media Block
+--------------------------------------------- */
+.media-block-container {
+  max-width: 80%;
+  margin: 3.125rem auto;
+}
+
+.media-block-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.25rem 0;
+}
+
+.media-block-1, .media-block-2, .media-block-3, .media-block-4 {
+  display: flex;
+  margin: 3.125rem 0
+}
+
+.media-block-1-img, .media-block-3-img{
+  width: 30em; 
+  height: auto;
+  order: 0
+}
+
+.media-block-1-content, .media-block-3-content {
+  width: 60%;
+  margin-left: 1.25rem;
+}
+
+.media-block-1-content h3::before , .media-block-3-content h3::before {
+  content: "";
+  display: block;
+  width: 3.125rem;
+  height: 0.31rem;
+  background-color: #ff000f;
+  margin-bottom: 0px;
+  position: relative;
+  left: 0;
+  top: -10px;
+}
+
+.media-block-1-content h3, .media-block-3-content h3 {
+font-family: Montserrat;
+font-weight: 500;
+font-size: 1.56rem;
+}
+
+.media-block-1-content p, .media-block-3-content p{
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.68rem;
+}
+
+.media-block-2-content, .media-block-4-content {
+  width: 60%;
+  margin-right: 1.25rem;
+
+}
+
+
+.media-block-2-img, .media-block-4-img{
+  width: 30em; 
+  height: auto;
+  order: 1
+}
+
+.media-block-2-content h3::before , .media-block-4-content h3::before {
+  content: "";
+  display: block;
+  width: 3.125rem;
+  height: 0.312rem;
+  background-color: #ff000f;
+  margin-bottom: 0px;
+  position: relative;
+  left: 0;
+  top: -10px;
+}
+
+.media-block-2-content h3, .media-block-4-content h3 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.56rem;
+  }
+
+.media-block-2-content p, .media-block-4-content p{
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.68rem;
+}
+
+
 
 
 

@@ -38,8 +38,12 @@ body {
   display: flex;
 }
 
-.main-navigation ul ul a {
+.main-navigation ul a {
   width: 12.5rem;
+}
+
+.main-navigation ul a:hover {
+  color: #FF000F;
 }
 
 .main-navigation li {

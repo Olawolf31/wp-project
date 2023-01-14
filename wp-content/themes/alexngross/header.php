@@ -53,9 +53,7 @@
 					?>
 				</nav>
 				<a href="<?php echo esc_url(get_site_url()); ?>">
-					<svg class='home-icon' style="width:34px;height:34px" viewBox="0 0 24 24">
-						<path fill="#ff000f" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
-					</svg>
+					<img src='http://localhost/alexngross/wp-content/uploads/2023/01/homelogo@2x.png' alt='Home' width="40px" height="40px"/>
 				</a>
 				<!-- #site-navigation -->
 		

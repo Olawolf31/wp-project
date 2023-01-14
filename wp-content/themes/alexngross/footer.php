@@ -49,7 +49,7 @@
 			</div>
 		</div>
 		<div class="footer-col footer-col-3">
-			<p>Copyright <?php echo date('Y'); ?> ABB INC</p>
+			<p>Copyright <?php echo date('Y'); ?> ABB AG</p>
 		</div>
 	</div>
 </footer>

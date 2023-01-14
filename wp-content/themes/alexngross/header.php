@@ -34,19 +34,29 @@
 				the_custom_logo();
 
 				?>
-			<!-- .site-branding -->
+				<!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<?php esc_html_e('Primary Menu', 'alexngross'); ?>
-				</button>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id' => 'primary-menu',
-					)
-				);
-				?>
-			</nav><!-- #site-navigation -->
+
+
+				<nav id="site-navigation" class="main-navigation">
+					<button class="hamburger-button menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+
+						<?php esc_html_e('', 'alexngross'); ?>
+					</button>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id' => 'primary-menu',
+						)
+					);
+					?>
+				</nav>
+				<a href="<?php echo esc_url(get_site_url()); ?>">
+					<svg class='home-icon' style="width:34px;height:34px" viewBox="0 0 24 24">
+						<path fill="#ff000f" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+					</svg>
+				</a>
+				<!-- #site-navigation -->
+		
 		</header><!-- #masthead -->

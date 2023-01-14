@@ -196,9 +196,4 @@ if (defined('JETPACK__VERSION')) {
  */
 register_nav_menu('footer', __('Footer Menu'));
 
-/**
- * Added a footer menu to theme functions.
- */
-register_nav_menu('footer_social', __('Social Media'));
-
 

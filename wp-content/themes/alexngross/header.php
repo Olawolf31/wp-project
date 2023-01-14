@@ -53,7 +53,7 @@
 					?>
 				</nav>
 				<a href="<?php echo esc_url(get_site_url()); ?>">
-					<img src='http://localhost/alexngross/wp-content/uploads/2023/01/homelogo@2x.png' alt='Home' width="40px" height="40px"/>
+					<img class='home-icon' src='http://localhost/alexngross/wp-content/uploads/2023/01/homelogo@2x.png' alt='Home' width="40px" height="40px"/>
 				</a>
 				<!-- #site-navigation -->
 		

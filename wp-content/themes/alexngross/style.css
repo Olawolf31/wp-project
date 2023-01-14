@@ -495,7 +495,7 @@ footer {
 /* Responsive Design
 --------------------------------------------- */
 
-@media only screen and (min-width: 400px) and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .custom-logo {
     width: 120px;
     height: 40px;
